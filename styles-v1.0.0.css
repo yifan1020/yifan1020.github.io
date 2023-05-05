@@ -1,0 +1,37 @@
+.parent-container {
+    position: relative;
+    height: 50vh; /* 设置父元素高度，可以根据需要调整 */
+  }
+  
+  .image-container {
+    position: absolute;
+    top: 50%; /* 垂直居中 */
+    left: 20%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 调整元素位置 */
+    width: 300px; /* 图像容器元素宽度 */
+    height: 200px; /* 图像容器元素高度 */
+  }
+
+  
+  img {
+    transition: all 0.3s ease-out;
+  }
+  
+  img:hover {
+    transform: scale(4);
+  }
+  
+  
+  .image-container:hover {
+    position: relative;
+    width: 400px; /* 放大后的宽度 */
+    height: 300px; /* 放大后的高度 */
+  }
+  
+
+
+
+  
+
+ 
+  
