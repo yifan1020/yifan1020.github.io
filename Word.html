@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background-color:rgb(255, 255, 255);">
+</body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles-v1.0.0.css">
+  <title>Word</title>
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <div class="Home">
+    <a href="index.html">Home</a>
+  </div>
+  <h1>Word</h1>
+  <div class="parent-container">
+    <p>
+      This is a book about words, where each person in the group takes a word of interest and, after looking at its
+      contemporary meaning and usage, creates an illustration for the word, considering its relationship to visual
+      communication. I made the word "meh" using the timetable on the stove.
+    </p>
+    <div class="image-container">
+      <img src="assets/word1.png">
+      <img src="assets/word2.png"><br>
+      <img src="assets/word3.png">
+    </div>
+  </div>
+
+  <div class="arrow-left">
+    <a href="#" class="arrow" onclick="goBack()">&#8592;</a>
+  </div>
+
+  <script>function nextPage() {
+      window.location.href = "Curtain.html"; // 将页面重定向到下一个页面的URL
+    }</script>
+
+  <div class="arrow-right">
+    <a href="#" class="arrow" onclick="nextPage()">&#8594;</a>
+  </div>
+
+
+</body>
+
+</html>

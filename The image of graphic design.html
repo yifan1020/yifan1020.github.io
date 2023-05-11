@@ -1,81 +1,54 @@
 <!DOCTYPE html>
-<html> 
-   <!-- <body style="background-color:white;"> -->
-   </body>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/level2.css">
-    <title>The Image of Graphic Design</title>
-  <link rel="icon" type="image/png" href="images/icon.png"/>
-  
+<html>
+<!-- <body style="background-color:white;"> -->
+</body>
 
-<style type="text/css">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles-v1.0.0.css">
+  <title>The Image of Graphic Design</title>
+  <script src="script.js"></script>
+</head>
 
-h1, p, video, img, a, body, h2 {  
-font-family: Arial, Helvetica, sans-serif;
-font-size: 14px;
-padding: 5px 2px 0px 5px;
-font-kerning: none;
-}  
-
-div {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    padding: 5px 2px 0px 5px;
-    width: 686px"
-}
-
-img {
-  width: 50%;
-}
-
-/* body {background-color: pink;} */
-    h1 {color: greenyellow;}
-
-
-</style>
-
-
-  </head>
-
-  <body>
+<body>
+  <div class="Home">
+    <a href="index.html">Home</a>
     <h1>The Image of Graphic Design</h1>
-    <video width= 400 controls>
-        <source src="assets/4 lines - (16x9).mov" type="video/mp4">
-        Your browser does not support HTML video.
-      </video>
-      <div>Video:"Tu Wei" Love Wrods</div><br><br>
-    <p style="width: 650px">
-        Prompt:
-We currently mostly encounter elements of graphic design on digital platforms. These images show an ideal, untouched and immaculate version of graphic design. What was once a graphic design object is now a dummy, a mock-up in a photomontage or a rendering. 
+    <div class="parent-container">
+      <p>
+        During Linda Van Deursen three-week workshop, she encouraged us to reflect on graphic design elements that are
+        currently prevalent on digital platforms. These images show an ideal, untouched, and immaculate version of
+        graphic design.<br><br>
 
-Is it important whether these objects really exist? 
+        Is it important whether these objects really exist?<br>
+        Can this image of graphic design be challenged?<br>
+        Can the image of graphic design be used to other ends?<br>
+        Can it be tested and pushed?<br>
+        Can it be undermined, corrupted, or subverted?<br><br>
 
-Can this image of graphic design be challenged?
+        I was guided and inspired by her to reproduce the four tailoring lines of Margiela on the surfaces of objects.
 
-Can the image of graphic design be used to other ends?
-Can it be tested and pushed?
-Can it be undermined, corrupted, or subverted?
+      </p>
+      <div class="video-container">
+        <video controls>
+          <source src="assets/4 lines - (16x9).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
+      <div class="arrow-left">
+        <a href="#" class="arrow" onclick="goBack()">&#8592;</a>
+      </div>
 
-During a three-week workshop with my idol Linda Van Deursen, I was guided and inspired by her to reproduce the four tailoring lines of Margiela on the surfaces of objects.
+      <script>function nextPage() {
+          window.location.href = "Distress Signal.html"; // 将页面重定向到下一个页面的URL
+        }</script>
 
+      <div class="arrow-right">
+        <a href="#" class="arrow" onclick="nextPage()">&#8594;</a>
+      </div>
 
-        </p><br><br>
-    <div style="width: 310px"><br>
-    </div><br><br>
+</body>
 
-    <!-- <img src="assets/2718_1.jpg"><br> -->
-    <!-- <img src="assets/IMG_5703.jpg"><br>
-    <img src="assets/Screen Shot 2023-05-04 at 2.57.00 PM.png"> -->
-
-    
-
-      <a href="index.html">Back</a>
-
-
-
-
-  </body>
-  </html>
+</html>

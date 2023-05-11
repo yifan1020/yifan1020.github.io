@@ -5,7 +5,6 @@
     right: 0;
   }
 
-
 .parent-container {
     display: grid; /* 将父元素设置为CSS Grid容器 */
     grid-template-columns: 1fr 2fr; /* 将父元素分为两列，比例为1:2 */
@@ -16,12 +15,12 @@
     grid-column: 2 / 3; /* 将图像的容器元素放置在第2列 */
   }
 
-  
-  .video-container {
-    grid-column: 2 / 3; 
-  }
 
-  p, div {
+  /* .video-container {
+    grid-column: 2 / 3; 
+  } */
+
+  p {
     font-family:Arial, Helvetica, sans-serif;
     grid-column: 1 / 2; /* 将段落放置在第1列 */
     margin: 0; /* 清除段落的默认边距 */
@@ -36,40 +35,58 @@
   }
 
   .image-container img {
-    width: 10%;
+    width: 30%;
     height: auto;
   }
   
-  .image-container img {
-    transition: all 0.5s ease-in-out; /* 添加过渡效果 */
+
+
+  .image-container {
+    position: relative;
+    overflow: hidden;
   }
-
-  .image-container img:hover {
-    width: 50%; /* 鼠标移到图像上时将其宽度增加20% */
-  }
-
-
-  .arrow-right {
-    position: fixed;
-    bottom: 0;
-    right: 49%;
-    transform: translateX(50%);
-    text-align: center;
-    width: 50px;
-    height: 50px;
-  } 
   
-  .arrow-left {
-    position: fixed;
-    bottom: 0;
-    right: 51%;
-    transform: translateX(50%);
-    text-align: center;
-    width: 50px;
-    height: 50px;
-  } 
+  .image-container img {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  
+
+/* .arrow-right {
+    position: absolute;
+    top: 115%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+  } */
+
   
   .arrow {
-    font-size: 2rem; /* 放大箭头 */
+    font-size: 2rem; 
   }
-  
+   
+ .arrow-right {
+  position: fixed;
+  bottom: 0;
+  right: 49%;
+  transform: translateX(50%);
+  text-align: center;
+  width: 50px;
+  height: 50px;
+} 
+
+.arrow-left {
+  position: fixed;
+  bottom: 0;
+  right: 51%;
+  transform: translateX(50%);
+  text-align: center;
+  width: 50px;
+  height: 50px;
+} 
+
+
+
+

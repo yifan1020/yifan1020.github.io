@@ -1,0 +1,326 @@
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+
+
+div.test {
+    white-space: nowrap;
+    width: 8px;
+    overflow: hidden;
+    border: ;
+    transition: transform .7s ease-in-out;
+    /* transition: width 2s; */
+    transition: width 2s, height 2s, transform 2s;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes example {
+from {background-color: grey;}
+to {background-color: white;}
+}     */
+
+
+#div1 {
+    transition-timing-function: linear;
+}
+
+#div2 {
+    transition-timing-function: ease;
+}
+
+#div3 {
+    transition-timing-function: ease-in;
+}
+
+#div4 {
+    transition-timing-function: ease-out;
+}
+
+#div5 {
+    transition-timing-function: ease-in-out;
+}
+
+#div6 {
+    transition-timing-function: linear;
+}
+
+#div7 {
+    transition-timing-function: ease;
+}
+
+#div8 {
+    transition-timing-function: ease-in;
+}
+
+#div9 {
+    transition-timing-function: ease-out;
+}
+
+#div10 {
+    transition-timing-function: ease-in-out;
+}
+
+#div11 {
+    transition-timing-function: linear;
+}
+
+#div12 {
+    transition-timing-function: ease;
+}
+
+#div13 {
+    transition-timing-function: ease-in;
+}
+
+#div14 {
+    transition-timing-function: ease-out;
+}
+
+#div15 {
+    transition-timing-function: ease-in-out;
+}
+
+#div16 {
+    transition-timing-function: linear;
+}
+
+#div17 {
+    transition-timing-function: ease;
+}
+
+#div18 {
+    transition-timing-function: ease-in;
+}
+
+#div19 {
+    transition-timing-function: ease-out;
+}
+
+#div20 {
+    transition-timing-function: ease-in-out;
+}
+
+#div22 {
+    transition-timing-function: ease-out;
+}
+
+#div24 {
+    transition-timing-function: ease;
+}
+
+
+
+
+div.test:hover {
+    overflow: visible;
+    width: 200px;
+    animation: paused;
+    cursor: pointer;
+    transform: rotate(180deg);
+    background-color: yellow;
+}
+
+div.test:hover,
+div.test:active {
+    font-family: monospace;
+    font-size: 50%;
+}
+
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+
+
+.animated {
+    width: 400px;
+    height: 25px;
+    background-color: yellow;
+    background-position: center;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+
+#div7,
+#div13,
+#div23,
+#div24 {
+    width: 10px;
+    height: 10px;
+    background: yellow;
+    position: relative;
+    animation: mymove 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 200px;
+        background-color: white;
+    }
+}
+
+
+
+
+div.test2 {
+    white-space: nowrap;
+    width: 8px;
+    overflow: hidden;
+    border: 0;
+    transition: transform .7s ease-in-out;
+    transition: width 2s;
+    /* transition: width 2s, height 2s, transform 2s; */
+}
+
+#div6 {
+    transition-timing-function: linear;
+}
+
+#div7 {
+    transition-timing-function: ease;
+}
+
+#div8 {
+    transform: scale(1, 1);
+}
+
+#div9 {
+    transition-timing-function: ease-out;
+    transform: scale(3, 3);
+}
+
+#div10,
+#div14,
+#div21 {
+    transition-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#div15 {
+    transform: scale(0.5, 0.5);
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+div.test2:hover {
+    overflow: visible;
+    width: 300px;
+    /* transform: rotate(180deg); */
+}
+
+
+
+
+/* #div12, #div18 {
+    font-size: large;
+    width: 280px;
+    height: 100px;
+    background-color: red;
+    animation-name: example2;
+    animation-duration: 4s;
+ }
+
+ @keyframes example2 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: red;} 
+    100% {background-color: yellow;} 
+  } */
+
+
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    white-space: nowrap;
+    width: 8px;
+    overflow: hidden;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+div.floating:hover {
+    overflow: visible;
+    width: 300px;
+    transform: rotate(180deg);
+}
