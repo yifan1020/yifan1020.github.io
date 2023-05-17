@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Draw a Window</title>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+  <div class="Home">
+    <a href="index.html">Home</a>
+  </div>
+  <div class="window">
+    <div class="window-frame">
+      <div class="bar "></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div id="light"></div>
+    </div>
+    <div class="window-frame">
+      <div class="bar horizontal"></div>
+      <div class="bar horizontal"></div>
+      <div class="bar horizontal"></div>
+    </div>
+    <div id="clouds">
+      <div class="cloud x1"></div>
+      <!-- Time for multiple clouds to dance around -->
+      <div class="cloud x2"></div>
+      <div class="cloud x3"></div>
+      <div class="cloud x4"></div>
+      <div class="cloud x5"></div>
+    </div>
+  </div>
+
+
+
+  <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+  <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+
+  <script src="https://button.glitch.me/button.js" defer></script>
+
+  <script>
+    var time = new Date();
+
+    var hour = time.getHours();
+
+    console.log(hour);
+
+    var sunlight = document.getElementById("light");
+
+    sunlight.style.opacity = 1 / (hour + 1);
+  </script>
+
+  <!-- <div class="arrow-left">
+    <a href="#" class="arrow" onclick="goBack()">&#8592;</a>
+  </div>
+
+  <script>function nextPage() {
+      window.location.href = "extension.html"; // 将页面重定向到下一个页面的URL
+    }</script>
+
+  <div class="arrow-right">
+    <a href="#" class="arrow" onclick="nextPage()">&#8594;</a>
+  </div> -->
+
+</body>
+
+</html>
